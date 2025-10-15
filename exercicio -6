@@ -1,0 +1,21 @@
+mport math
+
+a=float(input("Digite o valor do coeficiente 'a': "))
+b=float(input("Digite o valor do coeficiente 'b': "))
+c=float(input("Digite o valor do coeficiente 'c': "))
+
+discriminante = b**2 - 4*a*c
+
+if discriminante > 0:
+    raiz1 = (-b + math.sqrt(discriminante)) / (2*a)
+    raiz2 = (-b - math.sqrt(discriminante)) / (2*a)
+    print("Raízes reais e distintas:", raiz1, "e", raiz2)
+   
+elif discriminante == 0:
+    raiz = -b / (2*a)
+    print("Raízes reais e iguais:", raiz)
+   
+else:
+    parte_real = -b / (2*a)
+    parte_imaginaria = math.sqrt(abs(discriminante)) / (2*a)
+    print("Raízes complexas:", complex(parte_real, parte_imaginaria), complex(parte_real, -parte_imaginaria))
