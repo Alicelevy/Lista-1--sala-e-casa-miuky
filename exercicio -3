@@ -1,0 +1,9 @@
+valor1=float(input("Digite o primeiro valor: "))
+valor2=float(input("Digite o segundo valor: "))
+
+diferenca = abs(valor1 - valor2)
+maior = max(valor1, valor2)
+menor = min(valor1, valor2)
+
+print(f"A diferença do maior para o menor é: {maior - menor}")
+
